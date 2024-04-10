@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.h1 {
+    padding-left: 75px;
+    padding-top: 40px;
+
+    /* padding-bottom: 20px; */
+}
+.h12 {
+    padding-left: 105px;
+    padding-top: 40px;
+
+    /* padding-bottom: 20px; */
+}
+
+body {
+    background-color: rgb(10, 200, 181);
+   
+    /* background-color: color-mix(in srgb, #34c9eb 0%, white); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    /* border: 1px solid black; */
+    /* box-shadow: 10px 10px 5px 5px  black; */
+
+    /* box-shadow: ; */
+    background-color: blanchedalmond;
+
+}
+
+.container .login1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+}
+
+.container .login2 {
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    position: relative;
+
+
+
+    /* display: none; */
+
+}
+
+
+#image {
+    position: absolute;
+    right: 370px;
+    z-index: 10;
+    margin-left: 400px;
+}
+
+.rightslide{
+    animation-name: rightslide;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: unset;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.leftslide{
+    animation-name: leftslide;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: unset;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes rightslide {
+    from {
+        right: 370px;
+    }
+
+    to {
+        right: 765px;
+    }
+
+}
+
+
+@keyframes leftslide {
+    from {
+        right: 765px;
+    }
+
+    to {
+        right: 370px;
+    }
+
+
+  
+}
+
+.login-input {
+
+    width: 363px;
+    margin-left: 5px;
+}
+
+.sign-input {
+
+    margin-left: 5px;
+}
+
+#user1{
+
+    background-color: blanchedalmond;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-left: none;
+
+}
+
+#uicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#pass {
+    background-color: blanchedalmond;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+#picon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#eicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-left: none;
+
+}
+
+.input1 {
+
+    padding-top: 30px;
+}
+
+#btn {
+
+    width: 200px;
+    display: flex;
+    margin-left: 70px;
+    padding-left: 75px;
+}
+
+#g {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+#f {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+#in {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.register {
+    /* display:none; */
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+.subret {
+    padding-left: 80px;
+}
+
+.button {
+
+    margin-left: 5px;
+    width: 100px;
+}
+
+
+#suser {
+    background-color: blanchedalmond;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-left: none;
+}
+
+#email {
+    background-color: blanchedalmond;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-left: none;
+}
+
+#spass {
+    background-color: blanchedalmond;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+#suicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#emailicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#spicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#seicon {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.error
+{
+    color:red;
+    display: none;
+}
+
+.serror
+{
+    color: red;
+    display: none;
+}
